@@ -1,0 +1,8 @@
+[
+  {
+    "name": "java.lang.String",
+    "allPublicMethods": true,
+    "allPublicFields": true,
+    "allPublicConstructors": true
+  }
+]
