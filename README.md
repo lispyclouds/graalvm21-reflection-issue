@@ -1,11 +1,11 @@
-# graalvm21-reflection-issue
+# GraalVM 20/21 native image reflection issue
 
 This is a repro for an issue we are facing as a part of the [Babashka](https://babashka.org) project since GraalVM 21 native image. Also seems to happen with GraalVM 20.
 
 ## Build steps
-- Use GraalVM or GraalVM CE and set `GRAALVM_HOME` to the dir.
-- Compile: `$GRAALVM_HOME/bin/javac ReflectionIssue.java`
-- Compile to native: `$GRAALVM_HOME/bin/native-image -H:+UnlockExperimentalVMOptions -H:ReflectionConfigurationFiles=reflect-config.json ReflectionIssue`
+- Download GraalVM or GraalVM CE and set `JAVA_HOME` to the dir.
+- Compile: `$JAVA_HOME/bin/javac ReflectionIssue.java`
+- Compile to native: `$JAVA_HOME/bin/native-image -H:+UnlockExperimentalVMOptions -H:ReflectionConfigurationFiles=reflect-config.json ReflectionIssue`
 
 ## The error
 
